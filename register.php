@@ -8,7 +8,9 @@ if (isset($user_name)) {
 	header("Location: index.php");
 }
 
-
+$nameError="";
+     $emailError="";
+     $passError="";
  $error = false;
 
  if ( isset($_POST['Submit']) ) {
@@ -46,7 +48,12 @@ if (isset($user_name)) {
    // check email exist or not
    $query = "SELECT email FROM ".$prefix."users WHERE email='$email'";
    $result = mysql_query($query);
-   $count = mysql_num_rows($result);
+   if($result){
+       $count = mysql_num_rows($result);
+   }else{
+       $count=0;
+   }
+   
    if($count!=0){
     $error = true;
     $emailError = "<p class='wrong'>Provided Email is already in use.</p>";
@@ -84,10 +91,6 @@ if (isset($user_name)) {
   }
   
   
- }else{
-     $nameError="";
-     $emailError="";
-     $passError="";
  }
 ?>
 

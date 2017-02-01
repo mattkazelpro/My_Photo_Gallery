@@ -3,8 +3,8 @@ require('include/header.php');
 ?>
 
 <?php
-$loginfail = $_GET['login'];
-if ($loginfail == "fail") {
+$loginfail = isset($_GET['login']);
+if (!$loginfail) {
 ?>
 <div align="center">
 <table class="table" width="300" class="table">

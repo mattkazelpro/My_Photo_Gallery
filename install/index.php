@@ -6,7 +6,7 @@ $script_url = str_replace("index.php", "", $script_url);
 $script_url = str_replace("install/", "", $script_url);
 $installed = 0;
 $dir_uploads = '../uploads';
-$dir_orginal = '../uploads/orginal';
+$dir_orginal = '../uploads/original';
 $dir_thumbs = '../uploads/thumbs';
 $go = 1;
 ?>
