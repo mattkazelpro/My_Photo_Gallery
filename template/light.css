@@ -1,0 +1,107 @@
+ /* General page style */
+a:link {color: 0000FF; text-decoration:none;}    /* unvisited link */
+a:visited {color: 0000FF; text-decoration:none;} /* visited link */
+a:hover {color: FF0000; text-decoration:underline;}   /* mouse over link */
+a:active {color: 0000FF; text-decoration:underline;}  /* selected link */
+p.wrong { color: #FF0000; }
+
+body {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+
+table.table {
+	border: 1px #9C9ACE solid;
+	 /*width: 200;*/
+	border-collapse: collapse;
+}
+
+tr.table_header {
+	background-color: #9C9ACE;
+	color: #FFFFFF;
+}
+
+tr.row1 {
+	background-color: #F7F3F7;
+}
+
+tr.row2 {
+	background-color: #D9D5D9;
+}
+
+tr.row3 {
+	background-color: #DCE5F3;
+}
+
+
+td.cell_content {
+	background-color: #F7F3F7;
+}
+
+progress {
+  width: 10em;
+  height: 0.8em;
+  border: 1px solid;
+}
+
+table.thumb_cell {
+    border-radius: 25px;
+    border: 1px solid #DCE5F3;
+    background: #D9D5D9;
+    padding: 10px; 
+    width: 160px;
+}
+
+table.thumb_cell:hover { 
+	background: #DCE5F3;
+}
+
+ul {
+	list-style: none;
+	margin: 17px 20px 20px 24px;
+	width: 330px;
+}
+
+li {
+	display: block;
+	padding: 5px;
+	background-color: #D9D5D9;
+	border-bottom: 1px solid #DCE5F3;
+}
+
+li:hover {background-color: DCE5F3;}
+
+#content {
+	padding:50px;
+	width:680px;
+	float:left;
+}
+
+#clear { 
+	clear:both;
+}
+
+#box {
+	float:left;
+	margin:0 0 20px 0;
+	text-align:justify;
+}
+
+input[type=text].search {
+	width:330px; height:35px;
+}
+
+input[type=submit] {
+	width:110px; height:35px;
+}
+
+#display {
+	margin:0 0 10px 75;
+	text-align:justify;
+}
+
+progress {
+  width: 10em;
+  height: 0.8em;
+  border: 1px solid;
+}

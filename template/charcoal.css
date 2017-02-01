@@ -1,0 +1,109 @@
+ /* General page style */
+a:link {color: FFCCFF; text-decoration:none;}    /* unvisited link */
+a:visited {color: FFCCFF; text-decoration:none;} /* visited link */
+a:hover {color: FFCC33; text-decoration:underline;}   /* mouse over link */
+a:active {color: FFCCFF; text-decoration:underline;}  /* selected link */
+p.wrong { color: #FF0000; }
+
+body {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color:#333333;
+	color: #FFFFFF;
+}
+
+table.table {
+	border: 1px #000000 solid;
+	 /*width: 200;*/
+	border-collapse: collapse;
+}
+
+tr.table_header {
+	background: url('./charcoal/bg_navbar.gif') repeat;
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+tr.row1 {
+	background-color: #1E1E1E;
+}
+
+tr.row2 {
+	background-color: #303030;
+}
+
+tr.row3 {
+	background-color: #3E3E3E;
+}
+
+
+td.cell_content {
+	background: url('./charcoal/bg_content.gif') repeat;
+}
+
+progress {
+  width: 10em;
+  height: 0.8em;
+  border: 1px solid;
+}
+
+table.thumb_cell {
+    border-radius: 25px;
+    border: 1px solid #3E3E3E;
+    background: #303030;
+    padding: 10px; 
+    width: 160px;
+}
+
+table.thumb_cell:hover { 
+	background: #3E3E3E;
+}
+
+ul {
+	list-style: none;
+	margin: 17px 20px 20px 24px;
+	width: 330px;
+}
+
+li {
+	display: block;
+	padding: 5px;
+	background-color: #303030;
+	border-bottom: 1px solid #3E3E3E;
+}
+
+li:hover {background-color: 3E3E3E;}
+
+#content {
+	padding:50px;
+	width:680px;
+	float:left;
+}
+
+#clear { 
+	clear:both;
+}
+
+#box {
+	float:left;
+	margin:0 0 20px 0;
+	text-align:justify;
+}
+
+input[type=text].search {
+	width:330px; height:35px;
+}
+
+input[type=submit] {
+	width:110px; height:35px;
+}
+
+#display {
+	margin:0 0 10px 75;
+	text-align:justify;
+}
+
+progress {
+  width: 10em;
+  height: 0.8em;
+  border: 1px solid;
+}

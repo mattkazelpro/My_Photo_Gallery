@@ -1,0 +1,107 @@
+ /* General page style */
+a:link {color: 006699; text-decoration:none;}    /* unvisited link */
+a:visited {color: 006699; text-decoration:none;} /* visited link */
+a:hover {color: 000000; text-decoration:underline;}   /* mouse over link */
+a:active {color: 006699; text-decoration:underline;}  /* selected link */
+p.wrong { color: #FF0000; }
+
+body {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color:#CCFFFF;
+	color: #000000;
+}
+
+table.table {
+	border: 1px #0066FF solid;
+	 /*width: 200;*/
+	border-collapse: collapse;
+}
+
+tr.table_header {
+	background-color: #0066FF;
+	color: #FFFFFF;
+}
+
+tr.row1 {
+	background-color: #99CCFF;
+}
+
+tr.row2 {
+	background-color: #6699FF;
+}
+
+tr.row3 {
+	background-color: #3399FF;
+}
+
+
+td.cell_content {
+	background-color: #99CCFF;
+}
+
+progress {
+  width: 10em;
+  height: 0.8em;
+  border: 1px solid;
+}
+table.thumb_cell {
+    border-radius: 25px;
+    border: 1px solid #3399FF;
+    background: #6699FF;
+    padding: 10px; 
+    width: 160px;
+}
+
+table.thumb_cell:hover { 
+	background: #3399FF;
+}
+
+ul {
+	list-style: none;
+	margin: 17px 20px 20px 24px;
+	width: 330px;
+}
+
+li {
+	display: block;
+	padding: 5px;
+	background-color: #6699FF;
+	border-bottom: 1px solid #3399ff;
+}
+
+li:hover {background-color: 3300FF;}
+
+#content {
+	padding:50px;
+	width:680px;
+	float:left;
+}
+
+#clear { 
+	clear:both;
+}
+
+#box {
+	float:left;
+	margin:0 0 20px 0;
+	text-align:justify;
+}
+
+input[type=text].search {
+	width:330px; height:35px;
+}
+
+input[type=submit] {
+	width:110px; height:35px;
+}
+
+#display {
+	margin:0 0 10px 75;
+	text-align:justify;
+}
+
+progress {
+  width: 10em;
+  height: 0.8em;
+  border: 1px solid;
+}
