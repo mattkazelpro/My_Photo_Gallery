@@ -94,8 +94,8 @@ if (isset($_POST['submit'])) {
 	<tr class="row2">
 		<td>
 <?php
-
-$target_dir = "uploads/orginal/";
+define ('SITE_ROOT', realpath(dirname(__FILE__)));
+$target_dir = SITE_ROOT."\\uploads\\original\\";
 $target_file = $target_dir . basename($_FILES["img_file"]["name"]);
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
@@ -129,12 +129,12 @@ if ($width < 650) {
     $uploadOk = 0;
 }
 // Check if set a name to image name
-if (empty($_POST[img_name])) {
+if (empty($_POST["img_name"])) {
     echo "* Sorry, you have to set a image name.<br>";
     $uploadOk = 0;
 }
 // Check if set a categorie
-if ($_POST[img_cat] == '0') {
+if ($_POST["img_cat"] == '0') {
     echo "* Sorry, you have to set a categorie.<br>";
     $uploadOk = 0;
 }
@@ -159,7 +159,9 @@ if ($uploadOk == 0) {
     echo "<br>your file was not uploaded.";
 // if everything is ok, try to upload file
 } else {
+   
     if (move_uploaded_file($_FILES["img_file"]["tmp_name"], $target_file)) {
+         //var_dump($_FILES["img_file"]["tmp_name"]);    var_dump($target_file);die();
 	$fname = basename( $_FILES["img_file"]["name"]);
 	//$tmpname  = $src; 
 	//@img_resize( $tmpname , 600 , "thumbs" , "album_".$id.".jpg"); 

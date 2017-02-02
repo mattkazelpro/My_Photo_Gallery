@@ -36,7 +36,7 @@ $nameError="";
    $error = true;
    $nameError = "<p class='wrong'>Name must have atleat 3 characters.</p>";
   } else if (!preg_match("/^[a-zA-Z ]+$/",$name)) {
-   $error = true;
+   $error = FALSE;
    $nameError = "<p class='wrong'>Name must contain alphabets and space.</p>";
   }
   

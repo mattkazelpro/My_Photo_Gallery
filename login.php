@@ -1,8 +1,10 @@
 <?php
+
 require('include/header.php');
 ?>
 
 <?php
+
 $loginfail = isset($_GET['login']);
 if (!$loginfail) {
 ?>
